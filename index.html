@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ana Maria | Portifólio</title>
+    <meta
+      name="description"
+      content="Portifólio da desenvolvedora Ana Maria para compartilhar projetos desenvolvidos e habilidades"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <script>
+      const temaSalvo = localStorage.getItem("theme");
+      if (temaSalvo) {
+        document.documentElement.setAttribute("data-theme", temaSalvo);
+      }
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="menu menu--principal">
+          <li class="menu__item">
+            <a class="menu__link active" href="#home">
+              <span class="menu__text">Home</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#projetos">
+              <span class="menu__text">Projetos</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#sobre">
+              <span class="menu__text">Sobre</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contato">
+              <span class="menu__text">Contato</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__brand">
+        <img
+          class="brand__logo"
+          src="assets/images/logoam.png"
+          alt="Logo AM"
+        />
+      </div>
+      <div class="header__toggle">
+        <i id="toggleTheme" class="bi bi-sunset"></i>
+      </div>
+    </header>
+    <nav class="nav--mobile">
+      <ul class="menu menu--mobile">
+        <li class="menu__item">
+          <a class="menu__link active" href="#home">
+            <i class="menu__icon bi bi-house-door"></i>
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#projetos">
+            <i class="menu__icon bi bi-window-stack"></i>
+            <span class="menu__text">Projetos</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#sobre">
+            <i class="menu__icon bi bi-person"></i>
+            <span class="menu__text">Sobre</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contato">
+            <i class="menu__icon bi bi-envelope"></i>
+            <span class="menu__text">Contato</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main id="home">
+      <div class="main__content1">
+        <h1 id="scrambleTitle">
+          <b>soluções eficientes &</b> desenvolvimento backend
+        </h1>
+        <p>Ana Maria, São Paulo - SP, Desenvolvedora de Software</p>
+        <ul class="menu menu--social">
+          <li>
+            <a class="menu__link" href="https://github.com/Anawk" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="menu__icon bi bi-github"></i>
+            </a>
+          </li>
+          <li>
+            <a class="menu__link" href="https://www.linkedin.com/in/anamaria-costalima/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="menu__icon bi bi-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <a href="#projetos">
+          <button class="btn btn--primary">
+            <span>ver projetos</span>
+            <i class="bi bi-arrow-down-right"></i>
+          </button>
+        </a>
+      </div>
+    </main>
+
+    <section class="technologies">
+      <h2>Conhecimento nas principais tecnologias do mercado</h2>
+      <ul class="technologies__list">
+        <li class="technologies__item">
+          <img
+            class="technologies__logo"
+            src="assets/images/technologies/php02-svgrepo-com.svg"
+            alt="Logo Php"
+          />
+        </li>
+        <li class="technologies__item">
+          <img
+            class="technologies__logo"
+            src="assets/images/technologies/java-svgrepo-com.svg"
+            alt="Logo Java"
+          />
+        </li>
+        <li class="technologies__item">
+          <img
+            class="technologies__logo"
+            src="assets/images/technologies/cobol-svgrepo-com.svg"
+            alt="Logo Cobol"
+          />
+        </li>
+        <li class="technologies__item">
+          <img
+            class="technologies__logo"
+            src="assets/images/technologies/mysql-svgrepo-com.svg"
+            alt="Logo MySQL"
+          />
+        </li>
+        <li class="technologies__item">
+          <img
+            class="technologies__logo"
+            src="assets/images/technologies/javascript-16-svgrepo-com.svg"
+            alt="Logo JavaScript"
+          />
+        </li>
+        <li class="technologies__item">
+          <img
+            class="technologies__logo"
+            src="assets/images/technologies/html5-logo-svgrepo-com.svg"
+            alt="Logo HTML5"
+          />
+        </li>
+        <li class="technologies__item">
+          <img
+            class="technologies__logo"
+            src="assets/images/technologies/css-svgrepo-com.svg"
+            alt="Logo CSS3"
+          />
+        </li>
+        <li class="technologies__item">
+          <img
+            class="technologies__logo"
+            src="assets/images/technologies/api-svgrepo-com.svg"
+            alt="Logo API"
+          />
+        </li>
+      </ul>
+    </section>
+
+    <section id="projetos" class="projects">
+      <h2>Projetos</h2>
+      <div class="projects__container">
+        <div class="projects__card card--text">
+          <div class="card__body">
+            <h3 class="card__title">argus — gestão de estoque</h3>
+            <p class="card__description">
+              Sistema web de controle de estoque para micro e pequenas empresas, desenvolvido em equipe de seis pessoas no IFSP. Atuei no back-end, no banco de dados e na coordenação do projeto.
+            </p>
+            <ul class="card__list">
+              <li class="card__item">Controle de entradas e saídas, lotes e datas de validade;</li>
+              <li class="card__item">Envio de pedidos aos fornecedores por e-mail e WhatsApp;</li>
+              <li class="card__item">Etiquetas, frente de caixa e alertas de estoque baixo;</li>
+              <li class="card__item">Laravel, Blade e Bootstrap; integração com ViaCEP.</li>
+            </ul>
+            <p class="card__note">Sem prévia online: o sistema usa um banco de dados maior, que exige hospedagem paga. Instruções para rodar localmente no README do repositório.</p>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/php02-svgrepo-com.svg"
+                  alt="Logo PHP"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/mysql-svgrepo-com.svg"
+                  alt="Logo MySQL"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/javascript-16-svgrepo-com.svg"
+                  alt="Logo JavaScript"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/html5-logo-svgrepo-com.svg"
+                  alt="Logo HTML5"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/css-svgrepo-com.svg"
+                  alt="Logo CSS3"
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a href="https://github.com/ARGUS-PDS/Argus-code" target="_blank" rel="noopener">
+                <button class="btn btn--primary">
+                  <span>Repositório</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card card--text">
+          <div class="card__body">
+            <h3 class="card__title">desapegos da adri</h3>
+            <p class="card__description">
+              Catálogo online de produtos de beleza seminovos, desenvolvido para uma cliente como projeto freelance.
+            </p>
+            <ul class="card__list">
+              <li class="card__item">Filtros por categoria e por disponibilidade (disponíveis e vendidos);</li>
+              <li class="card__item">Layout responsivo e integração com o Instagram da cliente;</li>
+              <li class="card__item">Publicado em domínio próprio.</li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/html5-logo-svgrepo-com.svg"
+                  alt="Logo HTML5"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/css-svgrepo-com.svg"
+                  alt="Logo CSS3"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/javascript-16-svgrepo-com.svg"
+                  alt="Logo JavaScript"
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a href="https://desapegosdaadrianalima.com.br/" target="_blank" rel="noopener">
+                <button class="btn btn--primary">
+                  <span>Prévia</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+              <a href="https://github.com/Anawk/DesapegosDaAdri" target="_blank" rel="noopener">
+                <button class="btn">
+                  <span>Repositório</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card card--text">
+          <div class="card__body">
+            <h3 class="card__title">safewear — segurança feminina</h3>
+            <p class="card__description">
+              Projeto em grupo da disciplina de Pensamento Computacional (Ibmec): uma plataforma com acessório conceito para aumentar a segurança de mulheres. Em desenvolvimento.
+            </p>
+            <ul class="card__list">
+              <li class="card__item">Mapa com pontos de risco, como alertas de furto e roubo;</li>
+              <li class="card__item">Acionamento do alerta por triplo toque em um dispositivo Bluetooth (Media Session API);</li>
+              <li class="card__item">Envio do alerta com localização para contatos de confiança;</li>
+              <li class="card__item">Detecção de desconexão do dispositivo.</li>
+            </ul>
+            <div class="card__buttons">
+              <a href="https://safewear-sp.vercel.app" target="_blank" rel="noopener">
+                <button class="btn btn--primary">
+                  <span>Prévia</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+              <a href="https://safewear-landing.vercel.app" target="_blank" rel="noopener">
+                <button class="btn">
+                  <span>Landing page</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/Anawk" target="_blank" rel="noopener">
+          <button class="btn btn--primary">
+            <span>Ver Todos os Projetos</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section id="sobre" class="about">
+      <div class="about__content1">
+        <img
+          class="about__photo"
+          src="assets/images/ProfilePicture.jpg"
+          alt="Foto de Ana Maria"
+        />
+        <div class="about__description">
+          <h2>Sobre mim</h2>
+          <p>
+            Sou estudante de Engenharia de Software no Ibmec, formada como Técnica em Informática 
+            pelo Instituto Federal de São Paulo (IFSP). Tenho experiência profissional em desenvolvimento de software,
+            com atuação no desenvolvimento e manutenção de sistemas ERP, aplicações web e integrações entre sistemas.
+            Durante minha experiência profissional, trabalhei com PHP, Java, JavaScript, COBOL, HTML, CSS e SQL, utilizando 
+            bancos de dados PostgreSQL e MySQL. Também atuei no desenvolvimento de integrações via API com marketplaces como 
+            Shopee, Mercado Livre e Magalu, além de processos relacionados à transmissão de documentos fiscais eletrônicos (NF-e, NFC-e e MDF-e)
+            e certificação digital A1 e A3. Atualmente, estou buscando aprofundar meus conhecimentos em programação, 
+            estruturas de dados, desenvolvimento de software e engenharia de sistemas. Tenho interesse em oportunidades 
+            na área de desenvolvimento de software, especialmente em programação, backend, desenvolvimento web, APIs e integração de sistemas.
+            Sou uma profissional dedicada, curiosa e comprometida com o aprendizado contínuo, resolução de problemas e trabalho em equipe.
+          </p>
+          <div class="about__icons">
+            <i class="bi bi-translate"></i>
+            <span>Inglês: Nível A1 (Em aperfeiçoamento) | Espanhol: Básico</span>
+          </div>
+          <div class="description__buttons">
+            <a href="https://www.linkedin.com/in/anamaria-costalima/" target="_blank" rel="noopener">
+              <button class="btn btn--primary">
+                <span>Conecte-se Comigo</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+            <a
+              href="assets/Curriculo-Ana-Maria-Costa-Lima.pdf"
+              download="Curriculo Ana Maria Costa Lima.pdf"
+            >
+              <button class="btn">
+                <span>Currículo</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="about__content2">
+        <div class="col1">
+          <div class="row1">
+            <h3>Formação</h3>
+            <h4>Engenharia de Software (cursando)</h4>
+            <span>Ago 2026 - Jul 2030</span>
+            <div class="about__icons">
+              <i class="bi bi-bank"></i>
+              <span>Ibmec - São Paulo</span>
+            </div>
+            <br>
+            <h4>Técnico em Informática Integrado ao Ensino Médio</h4>
+            <span>Jan 2022 - Dez 2025</span>
+            <div class="about__icons">
+              <i class="bi bi-bank"></i>
+              <span>IFSP - São Paulo</span>
+            </div>
+          </div>
+          <div class="row2">
+            <h3>Experiências</h3>
+            <h4>Desenvolvedora de Software Júnior - PJ</h4>
+            <span>Jotec. Ago. 2024 - Ago 2026</span>
+            <span>
+              Desenvolvimento de software, com atuação no desenvolvimento e 
+              manutenção do ERP, aplicações web e integrações entre sistemas.
+            </span>
+            <ul class="about__list">
+              <li class="about__item">Desenvolvimento e manutenção de sistemas utilizando COBOL, Java, PHP, JavaScript, HTML e CSS;</li>
+              <li class="about__item">
+                Desenvolvimento de integrações via API com marketplaces como Shopee, Mercado Livre e Magalu;
+              </li>
+              <li class="about__item">
+                Implementação de processos de autenticação, sincronização de pedidos e envio de dados;
+              </li>
+              <li class="about__item">
+                Atuação com integração e transmissão de documentos fiscais eletrônicos, incluindo NF-e, NFC-e e MDF-e;
+              </li>
+              <li class="about__item">
+                Utilização de certificados digitais A1 e A3 em processos de integração e transmissão fiscal.
+              </li>
+            </ul>
+            <br />
+            <h4>Estagiária de Desenvolvimento Full Stack</h4>
+            <span>Tinebus. Abr. 2024 - Jul. 2024</span>
+            <ul class="about__list">
+              <li class="about__item">
+                Manutenção e evolução de aplicações web utilizando PHP, JavaScript, HTML e CSS;
+              </li>
+              <li class="about__item">
+                Participação no desenvolvimento de um sistema de gestão de viagens;
+              </li>
+              <li class="about__item">
+                Funcionalidades de cadastro de clientes, reservas de passagens e controle de poltronas;
+              </li>
+              <li class="about__item">
+                Correção de bugs e melhorias de performance e usabilidade.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col2">
+          <h3>Conhecimentos</h3>
+          <div id="accordion">
+            <div class="accordion__item active">
+              <button class="accordion__header start">
+                <span>Linguagens</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>PHP · Java · JavaScript · COBOL</p>
+                <p>
+                  Utilizadas no desenvolvimento e manutenção de sistemas ERP,
+                  aplicações web e integrações entre sistemas.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                <span>Desenvolvimento Web</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>HTML · CSS</p>
+                <p>
+                  Manutenção e evolução de aplicações web, com foco em
+                  funcionalidades de acordo com as demandas dos clientes.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                <span>Banco de Dados</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>PostgreSQL · MySQL</p>
+                <p>
+                  Bancos de dados relacionais utilizados no desenvolvimento e
+                  manutenção de sistemas.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header end">
+                <span>Integrações</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body end">
+                <p>APIs · Integração com marketplaces · Sistemas fiscais</p>
+                <p>
+                  Integrações via API com Shopee, Mercado Livre e Magalu e
+                  transmissão de documentos fiscais eletrônicos (NF-e, NFC-e e
+                  MDF-e) com certificados digitais A1 e A3.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- CURSOS DO MODELO ORIGINAL (conferir se são seus antes de reativar):
+
+          <div id="accordion">
+            <div class="accordion__item active">
+              <button class="accordion__header start">
+                <span>Versionamento de Código com Git e GitHub</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>Alura. Jun 2025. 3h.</p>
+                <p>
+                  O que é versionamento de código, Git e GitHub. Como instalar e
+                  configurar o Git em diferentes sistemas operacionais e como
+                  autenticar via Token e SSH. Como manusear repositórios, indo
+                  desde a criação e clonagem até o gerenciamento de branches,
+                  passando por todas as etapas de salvar, desfazer e sincronizar
+                  alterações com o repositório remoto.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                <span>Algoritmos e Lógica de Programação</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>Udemy. Maio 2025. 30h</p>
+                <p>
+                  Um curso completo de algoritmos e lógica de programação com
+                  centenas de exercícios práticos abordando as principais
+                  linguagens do mercado, como: C, C++, C#, Java, JavaScript e
+                  Python.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header end">
+                <span>Bootcamp Santander Front-End</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body end">
+                <p>Digital Innovation One. Ago 2026. 100h.</p>
+                <p>
+                  Um bootcamp promovido em parceria entre o Santander e a DIO
+                  onde foram abordados desde conceitos como HTML Semântico, SEO,
+                  Web Scrapping, passando por Posicionamento de Elementos com
+                  CSS utilizando FlexBox e Grid Layout até conceitos como Lógica
+                  de Programação em JavaScript, JSON, Consumo de APIs,
+                  Orientação a Protótipos, Manipulação de Listas e
+                  Assincronismo.
+                </p>
+              </div>
+            </div>
+          </div>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+      <h2>Contate-me</h2>
+      <p>
+        Estou disponível para oportunidades de estágio e novas conexões. Contate-me
+        via e-mail e conecte-se comigo através das minhas redes sociais.
+      </p>
+      <ul class="menu menu--social">
+        <li>
+          <a
+            class="menu__link"
+            href="https://github.com/Anawk"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="menu__icon bi bi-github"></i>
+            <span>GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="menu__link"
+            href="https://www.linkedin.com/in/anamaria-costalima/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="menu__icon bi bi-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <!-- <a class="menu__link" href="" target="_blank">
+            <i class="menu__icon bi bi-instagram"></i>
+            <span>Instagram</span>
+          </a> -->
+        </li>
+      </ul>
+      <a href="mailto:anamariacostalima60@gmail.com">
+        <button class="btn btn--primary">
+          <span class="email">anamariacostalima60@gmail.com</span>
+        </button>
+      </a>
+    </section>
+
+    <footer>
+      <p>
+        © 2026. Todos os direitos reservados a
+        <a href="https://www.linkedin.com/in/anamaria-costalima/" target="_blank" rel="noopener"
+          >Ana Maria Costa Lima</a
+        >.
+      </p>
+    </footer>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
